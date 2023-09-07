@@ -1,0 +1,26 @@
+###
+GET http://localhost:3000/routes
+
+###
+GET http://localhost:3000/routes/64e5254c8aa0b0a76908c5cc
+
+###
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+    "name": "route test 1",
+    "source_id": "EkZBdi4gR292LiBWYWxhZGFyZXMsIDEwMzAgLSBTYW50byBBZm9uc28sIEJldGltIC0gTUcsIDMyNjIzLTY5MCwgQnJhc2lsIjESLwoUChIJTbH1swDdpgARYOtQ1DjwovIQhggqFAoSCfmsiD4H3aYAEdRlj37c-uzz",
+    "destination_id": "Ej9Bdi4gR292LiBWYWxhZGFyZXMsIDYwMCAtIENlbnRybywgQmV0aW0gLSBNRywgMzI2MDAtMjE2LCBCcmFzaWwiMRIvChQKEgmtk12FkcOmABFQ1fNtFrEMYhDYBCoUChIJeRJOy5HDpgARM-5VqgWnhPE"
+}
+
+### coisas do mapa
+
+### pegar o place_id
+GET http://localhost:3000/places?text=av governador valadares, betim, 1030
+
+###
+GET http://localhost:3000/places?text=av governador valadares, betim, 600
+
+### pegar direções entre dois pontos
+GET http://localhost:3000/directions?originId=EkZBdi4gR292LiBWYWxhZGFyZXMsIDEwMzAgLSBTYW50byBBZm9uc28sIEJldGltIC0gTUcsIDMyNjIzLTY5MCwgQnJhc2lsIjESLwoUChIJTbH1swDdpgARYOtQ1DjwovIQhggqFAoSCfmsiD4H3aYAEdRlj37c-uzz&destinationId=Ej9Bdi4gR292LiBWYWxhZGFyZXMsIDYwMCAtIENlbnRybywgQmV0aW0gLSBNRywgMzI2MDAtMjE2LCBCcmFzaWwiMRIvChQKEgmtk12FkcOmABFQ1fNtFrEMYhDYBCoUChIJeRJOy5HDpgARM-5VqgWnhPE
